@@ -109,7 +109,7 @@ def get_appimagetool():
         if os.path.isfile(appimagetool_path):
             return appimagetool_path
 
-        url = "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
+        url = "https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage"
         try:
             os.makedirs(os.path.dirname(appimagetool_path), exist_ok=True)
             print("Downloading '{}'..".format(url))
